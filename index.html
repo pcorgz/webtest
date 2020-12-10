@@ -49,7 +49,7 @@
     </nav>
   </header>
 
-  <div id="cuadro" onclick="colores();">&iexcl;FIESTA!</div>
+  
   
   <section>
 		<div class="eye eye-ud">
@@ -67,22 +67,6 @@
 		</div>
 	</section>
 
-  <script>
-    var colores = function () {
-      setInterval(function() {
-        var red   = getRandomInt(1, 10) > 5 ? 255 : 0,
-            green = getRandomInt(1, 10) > 5 ? 255 : 0,
-            blue  = getRandomInt(1, 10) > 5 ? 255 : 0;
-
-        document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue +")";
-      }, 50);
-
-      document.getElementById("cuadro").remove();
-    };
-
-    function getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    };
-  </script>
+ 
 </body>
 </html>
